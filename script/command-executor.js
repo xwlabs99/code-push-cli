@@ -1524,7 +1524,7 @@ exports.releaseReact = function (command) {
     );
 
     const hermesProcess = exports.spawn(
-      path.join("node_modules", "hermes-engine", getHermesOSBin(), "hermes"),
+      path.join("node_modules", "hermes-engine", getHermesOSBin(), "hermesc"),
       hermesArgs
     );
 
@@ -1534,7 +1534,7 @@ exports.releaseReact = function (command) {
           "node_modules",
           "hermes-engine",
           getHermesOSBin(),
-          "hermes"
+          "hermesc"
         )} ${hermesArgs.join(" ")}`
       )
     );
